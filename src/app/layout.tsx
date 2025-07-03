@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
   description: 'I’m a 16-year-old web developer creating fast, modern, and custom websites. I turn your ideas into sleek, high-performance sites with clean design and professional quality—all done online with passion.',
 
-  metadataBase: new URL('https://tutuianu.app.vercel'),
+  metadataBase: new URL('https://tutuianu.vercel.app'),
 
   icons: {
     icon: ['/Logo.ico'],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: 'Tutuianu WebDev - Crafting Beautiful Websites at 16',
     description: 'Turn your ideas into sleek, high-performance websites built by a talented young developer.',
     images: ['/OG.png'],
-    url: 'https://tutuianu.app.vercel',
+    url: 'https://tutuianu.vercel.app',
     siteName: 'Tutuianu WebDev',
     locale: 'en_US',
     type: 'website',
