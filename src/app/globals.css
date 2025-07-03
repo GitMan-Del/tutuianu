@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html, body, * {
+    cursor:  url('/cursor.svg') 1 1, auto;
+   
   }
+  
+  button, a, [role="button"] {
+    cursor: url('/cursor-pointer.svg') 1 1, pointer;
+  }
+
+  body{
+    background-color: #030013;
+    overflow-x: hidden;
+  }
+
+
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #1a001f, #25033c);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #661288, #ff61d2);
+  border-radius: 10px;
+  border: 2px solid #1a001f;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff61d2, #a64ac9);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a64ac9 #1a001f;
+  scroll-behavior: smooth;  
+
 }
