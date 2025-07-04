@@ -74,10 +74,11 @@ export default function Home() {
       
       {/* Projects Section */}
       <section
-        className="hidden md:flex h-screen w-full flex-row justify-between bg-[#030013] z-20 p-8 md:p-20"
+        className="flex md:h-screen h-fit w-full md:flex-row flex-col text-center justify-between bg-[#030013] z-20 p-0 md:p-20"
         id="projects"
       >
-        <div className="relative md:w-1/2 h-full bg-transparent">
+        {/* Desktop layout - unchanged */}
+        <div className="hidden md:block relative md:w-1/2 h-full bg-transparent">
           <div className="absolute left-50 top-1/2 w-[500px] h-[500px] -translate-y-1/2 rounded-full z-10">
             <Image
               src="/bg.png"
@@ -175,7 +176,115 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end justify-center h-full md:w-1/2 text-end z-10 md:pr-20">
+        {/* Mobile/Tablet layout */}
+        <div className="flex flex-col px-4 w-full md:hidden items-center justify-center min-h-screen py-10">
+          {/* Title */}
+          <h1
+            className={`${zenDots.className} text-3xl sm:text-4xl text-white uppercase tracking-[2px] leading-[40px] mb-2`}
+          >
+            Projects That <br />
+            Speak for
+            <br /> Themselves
+          </h1>
+          {/* Description */}
+          <p
+            className={`${inter.className} font-light text-sm text-white z-10 max-w-xl mt-2`}
+          >
+            Explore a curated selection of real client projects, where design meets performance. From startups to tools used by thousands — built with precision and style.
+          </p>
+          {/* CTA Button */}
+          <button
+            className={`${inter.className} mt-6 font-normal gap-3 bg-white border border-white/50 rounded-full text-sm flex flex-row items-center justify-center px-10 py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-black`}
+          >
+            Contact Me
+            <ArrowBigRightDashIcon color="black" size={20} />
+          </button>
+          {/* Cards */}
+          <div className="flex flex-col gap-8 w-full items-center justify-center mt-10">
+            {/* Card 1 */}
+            <div className="flex flex-col gap-3 px-4 py-3 min-w-[260px] max-w-[340px] w-full h-fit rounded-[20px] bg-black text-white z-20">
+              <Image
+                src="/EverGreen.png"
+                alt="EverGreen"
+                width={240}
+                height={200}
+                className="w-full border border-white rounded-[10px]"
+              />
+              <h1 className="text-xl font-medium subpixel-antialiased">
+                EverGreenRp.com
+              </h1>
+              <p className="font-light text-xs subpixel-antialiased">
+                EverGreen RP este locul unde povestile prind viata, iar fiecare personaj e mai mult decat un nume pe ecran. O comunitate...
+              </p>
+              <Link
+                href="https://evergreenrp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <button className="w-full bg-white text-black rounded-xl py-2 px-10 subpixel-antialiased">
+                  See Project
+                </button>
+              </Link>
+            </div>
+            {/* Card 2 */}
+            <div className="flex flex-col gap-3 px-4 py-3 min-w-[260px] max-w-[340px] w-full h-fit rounded-[20px] bg-black text-white z-10">
+              <Image
+                src="/autobots.png"
+                alt="Toolbox"
+                width={240}
+                height={200}
+                className="w-full border border-white rounded-[10px]"
+              />
+              <h1 className="text-xl font-medium subpixel-antialiased">
+                Auto-Bots.com
+              </h1>
+              <p className="font-light text-xs subpixel-antialiased">
+                AutoBots oferă afacerilor locale superputeri — automatizează rezervările, mesajele și marketingul fără cod...
+              </p>
+              <Link
+                href="https://auto-bots.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <button className="w-full bg-white text-black rounded-xl py-2 px-10 subpixel-antialiased">
+                  See Project
+                </button>
+              </Link>
+            </div>
+            {/* Card 3 */}
+            <div className="relative flex flex-col gap-3 px-4 py-3 min-w-[260px] max-w-[340px] w-full h-fit rounded-[20px] bg-black text-white z-20">
+              <Image
+                src="/inv.png"
+                alt="InvityHub"
+                width={240}
+                height={200}
+                className="w-full border border-white rounded-[10px]"
+              />
+              <h1 className="text-xl font-medium subpixel-antialiased">
+                InvityHub.com
+              </h1>
+              <p className="font-light text-xs subpixel-antialiased">
+                InvitlyHub makes it easy to design invitations for any event and track your guest responses in real-time. Celebrate smarter.
+              </p>
+              <Link
+                href="https://invityhub.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <button className="w-full bg-white text-black rounded-xl py-2 px-10 subpixel-antialiased">
+                  See Project
+                </button>
+              </Link>
+              {/* +4 badge only on desktop */}
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop right side - unchanged */}
+        <div className="hidden md:flex flex-col items-end justify-center h-full md:w-1/2 text-end z-10 md:pr-20">
           {/* Title */}
           <h1
             className={`${zenDots.className} md:text-6xl text-white uppercase md:tracking-[5px] md:leading-[60px]`}
@@ -203,33 +312,33 @@ export default function Home() {
       </section>
       {/* Team (ME) */}
       <section
-        className="hidden md:flex w-full h-screen flex-col items-center justify-center px-8 md:px-20"
+        className="flex w-full h-fit max-h-fit md:min-h-[70vh] flex-col items-center justify-center px-4 md:px-20 md:py-10 py-16 relative"
         id="team"
       >
         <h1
-          className={`${zenDots.className} z-20 md:text-6xl text-white text-center uppercase md:tracking-[5px] md:leading-[60px]`}
+          className={`${zenDots.className} z-20 text-xl md:text-6xl text-white text-center uppercase tracking-[2px] md:tracking-[5px] leading-7 md:leading-[60px]`}
         >
-          BEHIND EVERY CLEAN LINE OF <br /> CODE IS A SHARPER MIND. <br /> JUST
+          BEHIND EVERY CLEAN LINE OF <br className="hidden md:block" /> CODE IS A SHARPER MIND. <br className="hidden md:block" /> JUST
           ONE. MINE.
         </h1>
         <p
-          className={`${inter.className} font-light md:text-md text-white z-10 md:max-w-3xl mt-4 text-center`}
+          className={`${inter.className} font-light text-xs md:text-md text-white z-10 max-w-xl md:max-w-3xl mt-4 text-center`}
         >
           I&apos;m a one-man team — developer, designer, and strategist all in one. At just 16, I combine technical skill with creative vision to build meaningful digital experiences. Every decision, every line of code, and every pixel — it&apos;s all me.
         </p>
-        {/* CTA Button ./. */}
+        {/* CTA Button */}
         <button
-          className={`${inter.className} z-20 mt-6 font-normal gap-5 bg-white/20 backdrop-blur-2xl border border-white rounded-full text-sm flex items-center justify-center md:px-16 py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-white`}
+          className={`${inter.className} z-20 mt-6 font-normal gap-2 md:gap-5 bg-white/20 backdrop-blur-2xl border border-white rounded-full text-xs md:text-sm flex items-center justify-center px-6 md:px-16 py-2 md:py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-white`}
         >
           On social media
-          <ArrowBigRightDashIcon />
+          <ArrowBigRightDashIcon size={18} className="md:size-[24px]" />
         </button>
         <Image
           src="/Ellipse 12.svg"
           alt="half c"
           width={1711}
           height={691}
-          className="absolute w-full h-full object-contain"
+          className="absolute w-full h-full object-contain left-0 top-0 pointer-events-none -z-10"
         />
       </section>
       {/* FOOTER  */}
