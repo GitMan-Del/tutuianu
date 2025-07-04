@@ -24,6 +24,7 @@ export default function Navbar() {
                     <Link className="hover:cursor-pointer hover:font-semibold hover:translate-x-0.5 transition-all duration-200" href="#hero" onClick={e => handleSmoothScroll(e, 'hero')}>Home</Link>
                     <Link className="hover:cursor-pointer hover:font-semibold hover:translate-x-0.5 transition-all duration-200" href="#projects" onClick={e => handleSmoothScroll(e, 'projects')}>Projects</Link>
                     <Link className="hover:cursor-pointer hover:font-semibold hover:translate-x-0.5 transition-all duration-200" href="#team" onClick={e => handleSmoothScroll(e, 'team')}>Team</Link>
+                    <Link className="hover:cursor-pointer hover:font-semibold hover:translate-x-0.5 transition-all duration-200" href="/contact" >Contact Me</Link>
                 </div>
                 <div>
                     <h1>tutuianuwebdev@gmail.com</h1>
@@ -81,6 +82,13 @@ export default function Navbar() {
                             onClick={e => handleSmoothScroll(e, 'team')}
                         >
                             Team
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="hover:font-semibold hover:translate-x-1 transition-all duration-200"
+                            onClick={e => handleSmoothScroll(e, 'team')}
+                        >
+                            Contact me
                         </Link>
                     </nav>
                     <div className="mt-auto px-8 pb-8 text-xs text-white/60">

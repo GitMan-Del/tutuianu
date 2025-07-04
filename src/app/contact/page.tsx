@@ -1,6 +1,14 @@
 // app/contact/page.tsx
 
 import { Mail, Phone, Instagram, Linkedin } from "lucide-react";
+import { Zen_Dots } from "next/font/google";
+
+
+const zenDots = Zen_Dots({
+    subsets: ["latin"],
+    weight: ["400"],
+    display: "swap",
+  });
 
 export default function ContactPage() {
   return (
@@ -9,7 +17,7 @@ export default function ContactPage() {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 z-10 relative">
         {/* Contact Form */}
         <form className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
+          <h1 className={`${zenDots.className} text-4xl md:text-5xl font-bold uppercase tracking-wide `}      >
             Let&apos;s <span className="bg-white text-black px-3 py-1 rounded-xl">talk</span>
           </h1>
           <p className="text-sm text-white/70 max-w-md">
