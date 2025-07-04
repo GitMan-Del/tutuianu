@@ -106,7 +106,7 @@ export default function Home() {
                   EverGreen RP este locul unde povestile prind viata, iar fiecare personaj e mai mult decat un nume pe ecran. O comunitate...
                 </p>
                 <Link
-                  href="https://evergreenrp.com"
+                  href="https://evergreenrp-mocha.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
@@ -132,7 +132,7 @@ export default function Home() {
                   AutoBots oferă afacerilor locale superputeri — automatizează rezervările, mesajele și marketingul fără cod...
                 </p>
                 <Link
-                  href="https://auto-bots.com"
+                  href="https://autobots-three.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
@@ -158,7 +158,7 @@ export default function Home() {
                   InvitlyHub makes it easy to design invitations for any event and track your guest responses in real-time. Celebrate smarter.
                 </p>
                 <Link
-                  href="https://invityhub.com"
+                  href="https://newone-wheat-psi.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
@@ -327,12 +327,15 @@ export default function Home() {
           I&apos;m a one-man team — developer, designer, and strategist all in one. At just 16, I combine technical skill with creative vision to build meaningful digital experiences. Every decision, every line of code, and every pixel — it&apos;s all me.
         </p>
         {/* CTA Button */}
-        <button
+        <a
+          href="https://www.instagram.com/invites/contact/?igsh=1kigfnepzj18i&utm_content=yuu768l"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`${inter.className} z-20 mt-6 font-normal gap-2 md:gap-5 bg-white/20 backdrop-blur-2xl border border-white rounded-full text-xs md:text-sm flex items-center justify-center px-6 md:px-16 py-2 md:py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-white`}
         >
           On social media
           <ArrowBigRightDashIcon size={18} className="md:size-[24px]" />
-        </button>
+        </a>
         <Image
           src="/Ellipse 12.svg"
           alt="half c"
