@@ -217,7 +217,7 @@ export default function Home() {
                 EverGreen RP este locul unde povestile prind viata, iar fiecare personaj e mai mult decat un nume pe ecran. O comunitate...
               </p>
               <Link
-                href="https://evergreenrp.com"
+                href="https://evergreenrp-mocha.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
@@ -243,7 +243,7 @@ export default function Home() {
                 AutoBots oferă afacerilor locale superputeri — automatizează rezervările, mesajele și marketingul fără cod...
               </p>
               <Link
-                href="https://auto-bots.com"
+                href="https://autobots-three.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
@@ -269,7 +269,7 @@ export default function Home() {
                 InvitlyHub makes it easy to design invitations for any event and track your guest responses in real-time. Celebrate smarter.
               </p>
               <Link
-                href="https://invityhub.com"
+                href="https://newone-wheat-psi.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"
