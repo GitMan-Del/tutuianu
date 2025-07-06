@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <Phone size={16} /> <span>+40 712 345 678</span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail size={16} /> <span>contact@myportfolio.com</span>
+                <Mail size={16} /> <span>tutuianuwebdev@gmail.com</span>
               </div>
             </div>
           </div>
