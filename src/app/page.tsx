@@ -108,7 +108,7 @@ export default function Home() {
                 <Link
                   href="https://evergreenrp-mocha.vercel.app"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer" 
                   className="w-full"
                 >
                   <button className="w-full bg-white text-black rounded-xl py-2 px-10 subpixel-antialiased">
@@ -127,7 +127,7 @@ export default function Home() {
                 />
                 <h1 className="text-xl font-medium subpixel-antialiased">
                   Auto-Bots.com
-                </h1>
+                  </h1>
                 <p className="font-light text-xs subpixel-antialiased">
                   AutoBots oferă afacerilor locale superputeri — automatizează rezervările, mesajele și marketingul fără cod...
                 </p>
