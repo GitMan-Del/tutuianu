@@ -56,12 +56,13 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <button
+          <Link
+            href="/contact"
             className={`${inter.className} px-4 py-1 mt-6 gap-3 bg-white border border-white/50 rounded-full text-sm flex flex-row items-center justify-center mx-auto hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-black md:mx-0 md:font-normal md:px-16 md:py-3`}
           >
             Start a Project
             <Sparkles color="black" size={15} />
-          </button>
+          </Link>
 
           <HeroWaves />
           <ScrollIndicator />
@@ -193,12 +194,14 @@ export default function Home() {
             Explore a curated selection of real client projects, where design meets performance. From startups to tools used by thousands — built with precision and style.
           </p>
           {/* CTA Button */}
-          <button
-            className={`${inter.className} mt-6 font-normal gap-3 bg-white border border-white/50 rounded-full text-sm flex flex-row items-center justify-center px-10 py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-black`}
-          >
-            Contact Me
-            <ArrowBigRightDashIcon color="black" size={20} />
-          </button>
+          <Link href="/contact">
+            <button
+              className={`${inter.className} mt-6 font-normal gap-3 bg-white border border-white/50 rounded-full text-sm flex flex-row items-center justify-center px-10 py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-black`}
+            >
+              Contact Me
+              <ArrowBigRightDashIcon color="black" size={20} />
+            </button>
+          </Link>
           {/* Cards */}
           <div className="flex flex-col gap-8 w-full items-center justify-center mt-10">
             {/* Card 1 */}
@@ -302,12 +305,13 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <button
+          <Link
+            href="/contact"
             className={`${inter.className} mt-6 font-normal gap-3 bg-white border border-white/50 rounded-full text-sm flex flex-row items-center justify-center md:px-16 md:py-3 hover:cursor-pointer hover:opacity-90 transition-opacity duration-200 text-black`}
           >
             Contact Me
             <ArrowBigRightDashIcon color="black" size={20} />
-          </button>
+          </Link>
         </div>
       </section>
       {/* Team (ME) */}
